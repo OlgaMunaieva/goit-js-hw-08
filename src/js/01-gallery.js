@@ -5,7 +5,7 @@ console.log(galleryItems);
 
 // Описаний в документації
 // import SimpleLightbox from 'node_modules/simplelightbox/dist/simple-lightbox.min.js';
-import SimpleLightbox from "declare module 'simplelightbox'";
+import SimpleLightbox from 'simplelightbox';
 // Додатковий імпорт стилів
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
