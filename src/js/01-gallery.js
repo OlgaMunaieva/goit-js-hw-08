@@ -1,12 +1,12 @@
-import { galleryItems } from './gallery-items.js';
-// Change code below this line
-
-console.log(galleryItems);
-
 // Описаний в документації
 import SimpleLightbox from 'simplelightbox';
 // Додатковий імпорт стилів
 import 'simplelightbox/dist/simple-lightbox.min.css';
+// Add imports above this line
+import { galleryItems } from './gallery-items';
+// Change code below this line
+
+console.log(galleryItems);
 
 const galleryEl = document.querySelector('.gallery');
 
@@ -43,7 +43,6 @@ function showLargePicture(event) {
   const ImgSource = event.target.dataset.source;
 
   const activePicture = createActivePicture(ImgSource);
-  console.log(activePicture);
 
   activePicture.show();
 
