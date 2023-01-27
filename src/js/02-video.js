@@ -1,7 +1,7 @@
 import Player from '@vimeo/player';
 import lodash from 'lodash.throttle';
 
-const CURRENT_TIME = 'current time';
+const CURRENT_TIME = 'videoplayer-current-time';
 
 const iframeEl = document.getElementById('vimeo-player');
 console.log(iframeEl);
@@ -28,7 +28,7 @@ player.on(
       // player.setCurrentTime(Number(seconds));
     });
   },
-  300
+  1000
 );
 
 function getCurrentTime() {
