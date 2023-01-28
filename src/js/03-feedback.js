@@ -37,16 +37,11 @@ function complectionDefaultForm() {
 }
 
 function createobjectDataForm(event) {
-  // console.log(event.target.getAttribute('name'));
   if (event.target.getAttribute('name') === emailInput) {
-    // console.log(event.target.value);
     objectDataForm.email = event.target.value;
-    // console.log(objectDataForm);
     localStorage.setItem(FEEDBACK_FORM_STATE, JSON.stringify(objectDataForm));
   } else if (event.target.getAttribute('name') === messageTaxtaria) {
-    console.log(event.target.value);
     objectDataForm.message = event.target.value;
-    console.log(objectDataForm);
     localStorage.setItem(FEEDBACK_FORM_STATE, JSON.stringify(objectDataForm));
   }
 }
@@ -67,7 +62,5 @@ function submitForm(event) {
   objectDataForm.message = '';
   emailEl.value = '';
   massageEl.value = '';
-  console.log(objectDataForm);
   localStorage.removeItem(FEEDBACK_FORM_STATE);
-  // event.Target.reset();
 }
