@@ -53,6 +53,11 @@ function createobjectDataForm(event) {
   }
 }
 
+/**
+ *
+ * @param {object} event
+ * @returns message if at least one form field is empty
+ */
 function submitForm(event) {
   event.preventDefault();
   const {
