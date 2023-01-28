@@ -54,7 +54,7 @@ function createobjectDataForm(event) {
 }
 
 /**
- *
+ *Resets event settings to default. During the event, clear the storage and form fields, as well as output to the console an object with the email, message fields and their current values.
  * @param {object} event
  * @returns message if at least one form field is empty
  */
