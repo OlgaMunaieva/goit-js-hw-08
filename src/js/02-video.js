@@ -27,9 +27,3 @@ function keepPlayingTime() {
     )
   );
 }
-
-// function setPlayingTimeLocal(time) {
-//   localStorage.setItem(CURRENT_TIME, time);
-// }
-
-// console.log(localStorage.getItem(CURRENT_TIME));

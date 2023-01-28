@@ -18,6 +18,9 @@ complectionDefaultForm();
 formEl.addEventListener('input', throttle(createobjectDataForm, 500));
 formEl.addEventListener('submit', submitForm);
 
+/**
+ *fills in the initial form data. If there is no local form data, then the form fields are empty. If not, then the form and objectDataForm are filled with data from local storage
+ */
 function complectionDefaultForm() {
   if (!localStorage.getItem(FEEDBACK_FORM_STATE)) {
     emailEl.value = '';
@@ -36,6 +39,10 @@ function complectionDefaultForm() {
   }
 }
 
+/**
+ *on an event, the objectDataForm is filled with the values email and message and transferred to the local storage in the format JSON
+ * @param {object} event input on email and massage
+ */
 function createobjectDataForm(event) {
   if (event.target.getAttribute('name') === emailInput) {
     objectDataForm.email = event.target.value;
