@@ -10,7 +10,7 @@ const player = new Player(iframeEl);
 
 keepPlayingTime();
 
-player.setCurrentTime(localStorage.getItem(CURRENT_TIME));
+player.setCurrentTime(localStorage.getItem(CURRENT_TIME) || 0);
 
 /**
  * gets and records the current playing time locally at 1 second intervals
